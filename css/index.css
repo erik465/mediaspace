@@ -162,6 +162,17 @@ video {
         padding-top: 0.5%;
         transition: 1s;
         width: 30%;
+        animation-name: blinky;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes blinky {
+        0% {
+            background: rgb(48, 46, 46);
+        }
+        100% {
+            background: transparent;
+        }
     }
     .init {
         position: fixed;
