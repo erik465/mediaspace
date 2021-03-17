@@ -365,4 +365,13 @@ footer p {
     .about-us a {
         width: 100%;
     }
+
+    .tarifes {
+        display: flex;
+        flex-direction: row;
+        color: #eee;
+        padding-right: 2%;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
 }
