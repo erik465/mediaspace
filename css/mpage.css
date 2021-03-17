@@ -375,6 +375,13 @@ footer p {
 height: 50%;
 }
 
+.tarife:nth-child(1){
+    width: 130%;
+}
+    .tarife:nth-child(1){
+        width: 130%;
+    }
+
     .tarife a {
         font-size: 50%;
     }
