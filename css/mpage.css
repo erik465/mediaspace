@@ -325,7 +325,7 @@ footer p {
     align-self: center;
 }
 
-@media(max-width:1100px) {
+@media(max-width:950px) {
     main {
         background: rgb(45, 3, 85);
     }
@@ -353,19 +353,15 @@ footer p {
         padding-top: 2%;
         padding-bottom: 2%;
     }
- 
     .tarife {
         font-size: 50%;
     }
-
-
     .tarife a {
         font-size: 50%;
     }
     .about-us a {
         width: 100%;
     }
-
     .tarifes {
         display: flex;
         flex-direction: row;
