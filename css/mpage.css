@@ -220,6 +220,7 @@ header h1 {
 .tarife {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border: 3px solid #eee;
     border-radius: 10px;
     text-align: center;
@@ -253,6 +254,12 @@ header h1 {
     font-size: 1rem;
     font-weight: 550;
     transition: 1.2s;
+}
+
+.tarife:nth-child(1) a {
+    width: 140%;
+    justify-self: center;
+    align-self: center;
 }
 
 .tarife a:hover {
