@@ -30,7 +30,7 @@
             </section>
         </div>
     </header>
-    <section class="flags">
+    <section class="flags" style="visibility: hidden;">
         <a href="pages/indexen.html"><img src="img/en.svg" alt="eng"></a>
         <a href="index.html"><img src="img/es.png" alt="esp"></a>
         <a href="pages/indexru.html"><img src="img/ru.svg" alt="rus"></a>
@@ -47,7 +47,7 @@
 </body>
 
 <script>
-    var lang = document.querySelector(".lang-select__flag")
+    var lang = document.querySelector(".header__lang-select")
     var select = document.querySelector(".flags")
     lang.addEventListener("click", function() {
         if (select.style.visibility == "hidden") {
