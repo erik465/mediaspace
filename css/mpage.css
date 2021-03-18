@@ -104,14 +104,17 @@ header h1 {
 }
 
 .about-us {
-    background: rgb(45, 3, 85);
-    padding: 10% 17%;
+    background: url(../img/ab.jpg);
+    background-image: url(../img/space.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 17%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    height: 100vh;
+    height: 95vh;
 }
 
 .about-us__txt {
@@ -146,6 +149,7 @@ header h1 {
     text-align: center;
     transition: 1s;
     text-decoration: none;
+    color: rgb(21, 3, 63);
 }
 
 .more:hover {
@@ -157,10 +161,10 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    padding: 5% 2%;
+    padding: 0% 2%;
     padding-top: 10%;
     background: rgb(51, 46, 46);
-    height: 85vh;
+    height: 75vh;
 }
 
 .service {
@@ -201,6 +205,7 @@ header h1 {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    padding-top: 10%;
     padding-bottom: 10%;
     align-self: center;
     justify-content: center;
@@ -332,6 +337,8 @@ footer p {
 
 .media:nth-child(1) a img {
     height: 80px;
+    align-self: bottom;
+    margin-top: 7%;
 }
 
 .media:nth-child(3) a img {
@@ -339,8 +346,12 @@ footer p {
     width: 90px;
 }
 
-.media:nth-child(1) {
-    align-self: center;
+.header__lang-select:hover .lang-select__flag {
+    background: rgb(119, 117, 117);
+}
+
+.header__lang-select:hover .lang-select__let {
+    background: rgb(119, 117, 117);
 }
 
 @media(max-width:950px) {

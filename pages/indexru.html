@@ -15,7 +15,7 @@
     <header>
         <h1>MediaSpace</h1>
         <div class="header__links">
-            <a href="/mediaspace">Начало</a>
+            <a href="../index.html">Начало</a>
             <a href="mpageru.html">О нас</a>
             <a href="mpageru.html">Сервисы</a>
             <a href="mpageru.html">Тарифы</a>
@@ -58,6 +58,15 @@
         } else {
             console.log("click")
 
+            select.style.visibility = "hidden"
+        }
+    });
+
+    var curtain = document.querySelector(".curtain");
+
+    curtain.addEventListener("click", function() {
+        if (select.style.visibility == "visible") {
+            console.log("click")
             select.style.visibility = "hidden"
         }
     });
