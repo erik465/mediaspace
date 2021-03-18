@@ -30,7 +30,7 @@
             </section>
         </div>
     </header>
-    <section class="flags">
+    <section class="flags" style="visibility: hidden;">
         <a href="mpageen.html"><img src="../img/en.svg" alt="eng"></a>
         <a href="mpage.html"><img src="../img/es.png" alt="esp"></a>
         <a href="mpageru.html"><img src="../img/ru.svg" alt="rus"></a>
@@ -151,6 +151,12 @@
         } else {
             select.style.visibility = "hidden"
         }
+    });
+
+    document.querySelector("main").addEventListener("click", function(){
+         if(select.style.visibility == "visible"){
+             select.style.visibility = "hidden";
+         }
     });
 </script>
 
