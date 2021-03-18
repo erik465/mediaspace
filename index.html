@@ -60,6 +60,15 @@
             select.style.visibility = "hidden"
         }
     });
+
+    var curtain = document.querySelector(".curtain");
+
+    curtain.addEventListener("click", function() {
+        if (select.style.visibility == "visible") {
+            console.log("click")
+            select.style.visibility = "hidden"
+        }
+    });
 </script>
 
 </html>

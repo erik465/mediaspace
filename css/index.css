@@ -136,10 +136,12 @@ video {
     padding-top: 0.5%;
     transition: 1s;
     width: 30%;
+    background: rgb(48, 46, 46)
 }
 
 .init__btn:hover {
-    background: rgb(48, 46, 46)
+    background: #eee;
+    color: #111;
 }
 
 .header__links a:hover {
