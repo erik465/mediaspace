@@ -362,6 +362,12 @@ footer p {
     background: rgb(119, 117, 117);
 }
 
+@media(max-width:750px) {
+    .tarife {
+        width: 120px;
+    }
+}
+
 @media(max-width:950px) {
     main {
         background: rgb(45, 3, 85);
@@ -420,10 +426,5 @@ footer p {
     }
     .about-us a {
         width: 100%;
-    }
-    @media(max-width:750px) {
-        .tarife {
-            width: 120px;
-        }
     }
 }
