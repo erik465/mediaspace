@@ -366,6 +366,9 @@ footer p {
     .tarife {
         width: 120px;
     }
+    .tar {
+        padding: 3% 7%;
+    }
 }
 
 @media(max-width:950px) {
