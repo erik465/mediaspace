@@ -413,12 +413,17 @@ footer p {
     }
     .tarife {
         font-size: 50%;
-        width: 120px;
+        width: 170px;
     }
     .tarife a {
         font-size: 50%;
     }
     .about-us a {
         width: 100%;
+    }
+    @media(max-width:750px) {
+        .tarife {
+            width: 120px;
+        }
     }
 }
