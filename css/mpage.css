@@ -374,8 +374,15 @@ footer p {
         font-size: 70%;
         font-weight: 600;
     }
+    .header__links a {
+        text-align: center;
+        margin-left: 2px;
+    }
     .about-us {
         font-size: 1rem;
+    }
+    .about-us__txt {
+        align-self: center;
     }
     .service {
         font-size: 50%;
@@ -390,6 +397,14 @@ footer p {
         padding-top: 2%;
         padding-bottom: 2%;
     }
+    .tarifes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        color: #eee;
+        padding: 3% 2% 3% 0;
+    }
     .tarife {
         font-size: 50%;
     }
@@ -398,11 +413,5 @@ footer p {
     }
     .about-us a {
         width: 100%;
-    }
-    .tarifes {
-        display: flex;
-        flex-direction: row;
-        color: #eee;
-        padding: 3% 2% 3% 0;
     }
 }
