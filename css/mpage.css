@@ -370,6 +370,9 @@ footer p {
         .tar {
             padding: 3% 7%;
         }
+        footer {
+            padding-bottom: 10%;
+        }
     }
     main {
         background: rgb(45, 3, 85);
