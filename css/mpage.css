@@ -404,9 +404,9 @@ footer p {
         padding-bottom: 2%;
     }
     .tarifes {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         color: #eee;
         padding: 3% 2% 3% 0;
     }
