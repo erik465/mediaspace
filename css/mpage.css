@@ -384,11 +384,15 @@ footer p {
     .about-us__txt {
         align-self: center;
     }
+    .services {
+        display: flex;
+        justify-content: space-between;
+    }
     .service {
         font-size: 50%;
     }
     .service img {
-        width: 100px;
+        width: 90px;
         height: 100px;
     }
     .tar h1 {
