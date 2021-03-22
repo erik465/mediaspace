@@ -388,7 +388,7 @@ footer p {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        padding-top: 5%;
+        padding-top: 10%;
         padding-bottom: 5%;
     }
     .service {
