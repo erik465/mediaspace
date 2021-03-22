@@ -386,7 +386,8 @@ footer p {
     }
     .services {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: baseline;
         padding-top: 5%;
         padding-bottom: 5%;
     }
@@ -405,7 +406,7 @@ footer p {
     }
     .tarifes {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: baseline;
         color: #eee;
         padding: 3% 2% 3% 0;
