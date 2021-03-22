@@ -164,7 +164,7 @@ video {
 @media(max-width: 850px) {
     header a {
         font-size: 60%;
-        margin-left: 2px;
+        margin-left: 4px;
     }
     header h1 {
         font-size: 70%;
