@@ -395,7 +395,7 @@ footer p {
         justify-content: space-between;
         align-items: baseline;
         padding-top: 10%;
-        padding-bottom: 5%;
+        padding-bottom: 1%;
     }
     .service {
         font-size: 50%;
