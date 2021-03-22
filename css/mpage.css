@@ -406,6 +406,7 @@ footer p {
     .tarifes {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
         color: #eee;
         padding: 3% 2% 3% 0;
     }
