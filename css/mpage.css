@@ -374,6 +374,9 @@ footer p {
             padding-bottom: 10%;
         }
     }
+    .tarife button {
+        width: 100%;
+    }
     main {
         background: rgb(45, 3, 85);
     }
