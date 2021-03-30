@@ -362,20 +362,21 @@ footer p {
     background: rgb(119, 117, 117);
 }
 
-@media(max-width:950px) {
-    @media(max-width: 750px) {
-        .tarife {
-            width: 120px;
-        }
-        .tar {
-            padding: 3% 7%;
-        }
-        footer {
-            padding-bottom: 10%;
-        }
+@media(max-width: 750px) {
+    .tarife {
+        width: 120px;
     }
+    .tar {
+        padding: 3% 7%;
+    }
+    footer {
+        padding-bottom: 10%;
+    }
+}
+
+@media(max-width:950px) {
     .tarife button {
-        width: 100%;
+        width: 100px;
     }
     main {
         background: rgb(45, 3, 85);
