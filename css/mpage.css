@@ -384,6 +384,7 @@ footer p {
     .header__links {
         font-size: 60%;
         margin-left: 2px;
+        flex-wrap: wrap;
     }
     header h1 {
         font-size: 70%;
