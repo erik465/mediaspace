@@ -443,6 +443,13 @@ main {
         text-align: center;
         margin-left: 4px;
     }
+    .displays__main {
+        height: 200px;
+    }
+    .displays__cont button {
+        font-size: 1rem;
+        width: 100%;
+    }
     .about-us {
         font-size: 1rem;
     }
