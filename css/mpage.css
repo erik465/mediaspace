@@ -362,6 +362,52 @@ footer p {
     background: rgb(119, 117, 117);
 }
 
+.displays__main {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.displays__vid {
+    margin: auto;
+    display: block;
+    height: inherit;
+}
+
+.displays__cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.displays__cont a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #eee;
+    border-radius: 10px;
+    padding: 1%;
+    padding-top: 0.5%;
+    transition: 1s;
+    width: 15%;
+    text-align: center;
+    background: rgb(48, 46, 46)
+}
+
+.displays__cont a:hover {
+    background: #eee;
+    color: #111;
+}
+
+main {
+    background: #000735;
+}
+
 @media(max-width: 750px) {
     .tarife {
         width: 120px;
