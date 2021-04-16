@@ -366,12 +366,14 @@ footer p {
     width: 100%;
     height: 90%;
     position: relative;
+    display: flex;
 }
 
 .displays__vid {
     margin: auto;
     display: block;
     height: inherit;
+    width: 100vw;
 }
 
 .displays__cont {
@@ -381,8 +383,9 @@ footer p {
     height: 50%;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    align-self: center;
 }
 
 .displays__cont a {
