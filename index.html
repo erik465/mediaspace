@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon.png">
     <title>MediaSpace</title>
 </head>
 
@@ -29,24 +30,25 @@
             </section>
         </div>
     </header>
-    <section class="flags">
-        <a href="pages/indexen.html"><img src="img/en.svg" alt="eng"></a>
-        <a href="index.html"><img src="img/es.png" alt="esp"></a>
-        <a href="pages/indexru.html"><img src="img/ru.svg" alt="rus"></a>
-    </section>
-    <main>
-        <video autoplay muted loop playsinline tabindex="0">
-            <source src="img/Publicidad.mp4", type="video/mp4">
+    <div class="curtain">
+        <section class="flags" style="visibility: hidden;">
+            <a href="pages/indexen.html"><img src="img/en.svg" alt="eng"></a>
+            <a href="index.html"><img src="img/es.png" alt="esp"></a>
+            <a href="pages/indexru.html"><img src="img/ru.svg" alt="rus"></a>
+        </section>
+        <main>
+            <video autoplay muted loop playsinline tabindex="0">
+            <source src="img/Publicidad.mp4" type="video/mp4">
         </video>
-        <div class="init" id="init">
-            <a class="init__btn" href="pages/mpage.html">Saber más</a>
-        </div>
-    </main>
-
+            <div class="init" id="init">
+                <a class="init__btn" href="pages/mpage.html">Saber más</a>
+            </div>
+        </main>
+    </div>
 </body>
 
 <script>
-    var lang = document.querySelector(".lang-select__flag")
+    var lang = document.querySelector(".header__lang-select")
     var select = document.querySelector(".flags")
     lang.addEventListener("click", function() {
         if (select.style.visibility == "hidden") {
@@ -55,6 +57,15 @@
         } else {
             console.log("click")
 
+            select.style.visibility = "hidden"
+        }
+    });
+
+    var curtain = document.querySelector(".curtain");
+
+    curtain.addEventListener("click", function() {
+        if (select.style.visibility == "visible") {
+            console.log("click")
             select.style.visibility = "hidden"
         }
     });

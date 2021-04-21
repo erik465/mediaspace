@@ -49,6 +49,14 @@ header h1 {
     height: 70%;
 }
 
+.header__lang-select:hover .lang-select__flag {
+    background: rgb(119, 117, 117);
+}
+
+.header__lang-select:hover .lang-select__let {
+    background: rgb(119, 117, 117);
+}
+
 .lang-select__flag {
     display: flex;
     align-items: center;
@@ -58,6 +66,7 @@ header h1 {
     width: 40px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    transition: 1s;
 }
 
 .lang-select__flag img {
@@ -74,6 +83,7 @@ header h1 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: #eee;
+    transition: 1s;
 }
 
 .flags {
@@ -109,9 +119,13 @@ video {
 
 .init {
     position: fixed;
-    bottom: 30%;
-    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #f1f1f1;
+    top: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
     padding: 10px;
 }
@@ -125,15 +139,26 @@ video {
     padding: 1%;
     padding-top: 0.5%;
     transition: 1s;
-    width: 30%;
+    width: 15%;
+    text-align: center;
+    background: rgb(48, 46, 46)
 }
 
 .init__btn:hover {
-    background: rgb(48, 46, 46)
+    background: #eee;
+    color: #111;
 }
 
 .header__links a:hover {
     color: rgb(156, 41, 179);
+}
+
+.curtain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
 }
 
 @media(max-width: 850px) {
@@ -154,8 +179,9 @@ video {
     }
     .init__btn {
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 400;
+        background: rgb(48, 46, 46);
         color: #eee;
         border-radius: 5px;
         padding: 1%;
@@ -165,11 +191,14 @@ video {
     }
     .init {
         position: fixed;
-        bottom: 40%;
-        left: 24%;
+        top: 0;
+        left: 0;
         color: #f1f1f1;
         width: 100%;
-        padding: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     video {
         background: rgb(4, 7, 48);
