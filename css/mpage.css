@@ -448,9 +448,12 @@ main {
         height: 200px;
         width: 100vw;
     }
+    .displays__vid{
+        width: 100%;
+    }
     .displays__cont a {
         font-size: 60%;
-        width: 100%;
+        width: 50%;
     }
     .about-us {
         font-size: 1rem;
