@@ -446,8 +446,9 @@ main {
     }
     .displays__main {
         height: 200px;
+        width: 100vw;
     }
-    .displays__cont button {
+    .displays__cont a {
         font-size: 60%;
         width: 100%;
     }
