@@ -133,7 +133,7 @@ header a:hover {
 }
 
 @media(max-width:950px) {
-    img{
+   .product  img{
         height: 50%;
         width: 50%;
     }
