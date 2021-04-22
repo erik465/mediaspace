@@ -131,3 +131,19 @@ header a:hover {
     height: 300px;
     width: auto;
 }
+
+@media(max-width:950px) {
+    img{
+        height: 50%;
+        width: 50%;
+    }
+
+    h1, h2, p{
+        font-size: 1rem;
+    }
+
+    a{
+        font-size: 50%
+    }
+    
+}
