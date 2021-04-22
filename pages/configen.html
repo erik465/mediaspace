@@ -12,7 +12,24 @@
 
 <body>
     <header>
-
+        <header>
+            <h1>MediaSpace</h1>
+            <a href="mpage.html">Back</a>
+            <div class="header__lang-select">
+                <section class="lang-select__flag">
+                    <img src="img/es.png" alt="esp">
+                </section>
+    
+                <section class="lang-select__let">
+                    <p>EN</p>
+                </section>
+            </div>
+        </header>
+        <section class="flags" style="visibility: hidden">
+            <a href="configen.html"><img src="../img/en.svg" alt="eng"></a>
+            <a href="configes.html"><img src="../img/es.png" alt="esp"></a>
+            <a href="configru.html"><img src="../img/ru.svg" alt="rus"></a>
+        </section>
     </header>
     <div class="products">
         <div class="product">
@@ -38,4 +55,22 @@
     </div>
 </body>
 
+    
+<script>
+    var lang = document.querySelector(".lang-select__flag")
+    var select = document.querySelector(".flags")
+    lang.addEventListener("click", function() {
+        if (select.style.visibility == "hidden") {
+            select.style.visibility = "visible"
+        } else {
+            select.style.visibility = "hidden"
+        }
+    });
+
+    document.querySelector("main").addEventListener("click", function() {
+        if (select.style.visibility == "visible") {
+            select.style.visibility = "hidden"
+        }
+    });
+</script>
 </html>

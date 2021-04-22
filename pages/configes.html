@@ -14,29 +14,52 @@
     <header>
         <h1>MediaSpace</h1>
         <a href="mpage.html">Volver</a>
+        <div class="header__lang-select">
+            <section class="lang-select__flag">
+                <img src="img/es.png" alt="esp">
+            </section>
+
+            <section class="lang-select__let">
+                <p>ES</p>
+            </section>
+        </div>
     </header>
+    <section class="flags" style="visibility: hidden">
+        <a href="configen.html"><img src="../img/en.svg" alt="eng"></a>
+        <a href="configes.html"><img src="../img/es.png" alt="esp"></a>
+        <a href="configru.html"><img src="../img/ru.svg" alt="rus"></a>
+    </section>
     <div class="products">
         <div class="product">
+            <h2>Pantalla exterior</h2>
             <img src="../img/product1.jpg" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sed, nisi minus molestias veniam debitis id ut dolore mollitia quisquam?</p>
             <a href="mailto:mediaspace.es@gmail.com">Pedir presupuesto</a>
         </div>
         <div class="product">
+            <h2>Pantalla interior</h2>
             <img src="../img/product2.jpg" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sed, nisi minus molestias veniam debitis id ut dolore mollitia quisquam?</p>
             <a href="mailto:mediaspace.es@gmail.com">Pedir presupuesto</a>
         </div>
-        <div class="product">
-            <img src="../img/product3.jpg" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sed, nisi minus molestias veniam debitis id ut dolore mollitia quisquam?</p>
-            <a href="mailto:mediaspace.es@gmail.com">Pedir presupuesto</a>
-        </div>
-        <div class="product">
-            <img src="../img/product4.jpg" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sed, nisi minus molestias veniam debitis id ut dolore mollitia quisquam?</p>
-            <a href="mailto:mediaspace.es@gmail.com">Pedir presupuesto</a>
-        </div>
+    
     </div>
+    
+<script>
+    var lang = document.querySelector(".lang-select__flag")
+    var select = document.querySelector(".flags")
+    lang.addEventListener("click", function() {
+        if (select.style.visibility == "hidden") {
+            select.style.visibility = "visible"
+        } else {
+            select.style.visibility = "hidden"
+        }
+    });
+
+    document.querySelector("main").addEventListener("click", function() {
+        if (select.style.visibility == "visible") {
+            select.style.visibility = "hidden"
+        }
+    });
+</script>
 </body>
 
 </html>
