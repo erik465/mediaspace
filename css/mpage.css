@@ -447,7 +447,7 @@ main {
         height: 200px;
     }
     .displays__cont button {
-        font-size: 1rem;
+        font-size: 10%;
         width: 100%;
     }
     .about-us {
