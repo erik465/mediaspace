@@ -450,6 +450,7 @@ main {
     }
     .displays__vid{
         width: 100%;
+        height: 100%;
     }
     .displays__cont a {
         font-size: 70%;
