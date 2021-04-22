@@ -19,6 +19,21 @@ header {
     color: #eee;
 }
 
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 7%;
+    padding: 0% 10%;
+    margin-bottom: 0;
+}
+
+.heading h1{
+    align-self: center;
+    text-align: center;
+}
+
+
 header h1 {
     color: #eee;
     align-self: center;
@@ -105,7 +120,7 @@ header a:hover {
 }
 
 .products {
-    margin-top: 10%;
+    margin-top: 5%;
     padding-bottom: 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -138,8 +153,78 @@ header a:hover {
 }
 
 .product img {
-    height: 300px;
+    height: 350px;
     width: auto;
+    margin-bottom: 5%;
+}
+
+footer {
+    background: #2e2d2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    padding: 5% 4%;
+    padding-top: 1%;
+    height: 100vh;
+}
+
+footer a {
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer h1:nth-child(2){
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50vw;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+.media a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.media a:hover {
+    opacity: 0.5;
+}
+
+.media a img {
+    height: 100px;
+    width: 100px;
+}
+
+.media:nth-child(2) a img {
+    height: 90px;
+    width: 120px;
+}
+
+.media:nth-child(1) a img {
+    height: 80px;
+    align-self: bottom;
+    margin-top: 7%;
+}
+
+.media:nth-child(3) a img {
+    height: 90px;
+    width: 90px;
 }
 
 @media(max-width:950px) {
