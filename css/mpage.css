@@ -541,7 +541,7 @@ main {
     }
 
     .displays__cont{
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: center;
     }
 }
