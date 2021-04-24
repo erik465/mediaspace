@@ -534,7 +534,14 @@ main {
     footer h1{
      font-size: 60%;
     }
+
+
     .displays__cont h2{
         font-size: 50%;
+    }
+
+    .displays__cont{
+        align-items: flex-end;
+        justify-content: center;
     }
 }
