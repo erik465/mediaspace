@@ -529,4 +529,11 @@ main {
     footer {
         padding-bottom: 7%;
     }
+
+    footer h1{
+     font-size: 60%;
+    }
+    .displays__cont h2{
+        font-size: 50%;
+    }
 }

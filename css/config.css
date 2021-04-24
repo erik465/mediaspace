@@ -258,5 +258,13 @@ footer p {
     a{
         font-size: 70%
     }
+
+    footer{
+        padding-bottom: 5%;
+    }
+
+    .heading{
+        mask-type: 30px;
+    }
     
 }
