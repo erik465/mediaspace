@@ -543,6 +543,7 @@ main {
     .displays__cont{
         align-items: center;
         justify-content: space-around;
-        bottom: 10%;
+        bottom: 0;
+        top: -10%;
     }
 }
