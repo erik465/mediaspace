@@ -544,6 +544,6 @@ main {
         align-items: center;
         justify-content: space-around;
         bottom: 0;
-        top: -10%;
+        top: -50px;
     }
 }
