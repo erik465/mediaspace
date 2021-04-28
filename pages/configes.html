@@ -36,20 +36,67 @@
        </div>
 
 
+
     <div class="products">
         
         <div class="product">
             <h2>Pantalla exterior</h2>
             <img src="../img/product1.jpg" alt="">
-            <a href="mailto:mediaspace.es@gmail.com">Pedir presupuesto</a>
+            <button class="pres">Pedir presupuesto</button>
         </div>
         <div class="product">
             <h2>Pantalla interior</h2>
             <img src="../img/product2.jpg" alt="">
-            <a href="mailto:mediaspace.es@gmail.com">Pedir presupuesto</a>
+            <button class="pres">Pedir presupuesto</button>
         </div>
     
     </div>
+
+
+    <div class="pop-up" visibility="hidden">
+        <form action="../php/form_validate.php" method="post" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
+            <h2>Pedir presupuesto</h2>
+            <label for="name">Nombre y Appellidos</label>
+            <input type="text" id="name" name="name">
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" name="mail">
+            <label for="business">Compañía</label>
+            <input type="text" id="business" name="business">
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel">
+            <label for="loc">Locación de la pantalla</label>
+            <input type="text" id="loc" name="loc">
+            <label for="he">Altura(cantidad de modulos)</label>
+            <div class="aggr">
+                1
+                <input type="range" value="1" min="1" max="6" id="he" name="he">
+                6
+            </div>
+           
+            <label for="wi">Anchura(cantidad de modulos)</label>
+           <div class="aggr"> 
+               1
+            <input type="range"  id="wi" min="1" max="12" name="wi">
+            12
+           </div>
+           <output for="he" id="hx"></output>
+           <label for="pitch">Pitch</label>
+           <select name="pitch" id="pitch">
+               <option value="P4">P4</option>
+               <option value="P6">P6</option>
+               <option value="P8">P8</option>
+               <option value="P10">P10</option>
+           </select>
+           <label for="type">Tipo</label>
+           <select name="type" id="type">
+               <option value="">Exterior</option>
+               <option value="">Interior</option>
+           </select>
+           <input type="submit" value="Submit" id="subm">
+
+        </form>
+    </div>
+
     <footer id="contacts">
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6232.400460753122!2d0.0452157!3d38.6442761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129dfe2c53f2b71d%3A0x699f2e83fad50a1c!2sCentro%20Comercial%20Plaza%20Central%20Calpe!5e0!3m2!1ses!2ses!4v1615905194297!5m2!1ses!2ses"
@@ -83,6 +130,7 @@
 <script>
     var lang = document.querySelector(".header__lang-select")
     var select = document.querySelector(".flags")
+    var body = document.querySelector("body");
     lang.addEventListener("click", function() {
         if (select.style.visibility == "hidden") {
             select.style.visibility = "visible"
@@ -91,11 +139,23 @@
         }
     });
 
-    document.querySelector("body").addEventListener("click", function() {
+    body.addEventListener("click", function() {
         if (select.visibility == "visible") {
             select.visibility = "hidden"
         }
+        
     });
+
+    var popUp = document.querySelector(".pop-up");
+    var buttons = document.querySelectorAll(".pres");
+
+    for(var button of buttons){
+        button.addEventListener("click", function(){
+            popUp.style.display = "block";
+    
+            
+        });
+    }
 </script>
 
 </html>
