@@ -19,7 +19,7 @@ $subject = "=?utf-8?B?".base64_encode($subject)."?=";
 $headers = "From: $from \r\n Reply to: $from \r\n Content-type: text/plain; charset=utf-8 \r\n";
 
 mail($to, $subject, $message, $headers);
-header("Location: https://mediaspace.es/");
+header('Location: https://mediaspace.es/');
 exit;
 
 
