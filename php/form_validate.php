@@ -20,4 +20,5 @@ $headers = "From: $from \r\n Reply to: $from \r\n Content-type: text/plain; char
 
 mail($to, $subject, $message, $headers);
 header("Location: /pages/mpage.html");
+exit;
 ?>
