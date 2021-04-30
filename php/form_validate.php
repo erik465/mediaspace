@@ -6,7 +6,7 @@ $business = $_POST['business'];
 $tel = $_POST['tel'];
 $loc = $_POST['loc'];
 $he = $_POST['he'];
-$wi = $_POST['we'];
+$wi = $_POST['wi'];
 $pitch = $_POST['pitch'];
 $type = $_POST['type'];
 
