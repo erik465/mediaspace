@@ -535,6 +535,11 @@ main {
      font-size: 60%;
     }
 
+    .displays__vid{
+        width: 100%;
+        height: 100%;
+    }
+
 
     .displays__cont h2{
         font-size: 50%;
@@ -543,7 +548,7 @@ main {
     .displays__cont{
         align-items: center;
         justify-content: space-around;
-        bottom: 0;
+        bottom: 20px;
     
     }
 }
