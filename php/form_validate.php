@@ -1,14 +1,15 @@
 <?php
 
-$name = $_POST['name'];
-$mail = $_POST['mail'];
-$business = $_POST['business'];
-$tel = $_POST['tel'];
-$loc = $_POST['loc'];
-$he = $_POST['he'];
-$wi = $_POST['wi'];
-$pitch = $_POST['pitch'];
-$type = $_POST['type'];
+$name = $_GET['name'];
+$name = $_GET['name'];
+$mail = $_GET['mail'];
+$business = $_GET['business'];
+$tel = $_GET['tel'];
+$loc = $_GET['loc'];
+$he = $_GET['he'];
+$wi = $_GET['wi'];
+$pitch = $_GET['pitch'];
+$type = $_GET['type'];
 
 
 $from = $mail;
