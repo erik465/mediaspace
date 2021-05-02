@@ -54,7 +54,8 @@
 
 
     <div class="pop-up" visibility="hidden">
-        <form action="../php/form_validate.php" method="GET" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
+        <iframe src="" frameborder="0" id="hidden" name="hidden" class="hidden" style="display: none"></iframe>
+        <form action="https://usebasin.com/f/1af9bed8fa8f" method="POST" target="hidden" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
             <h2>Pedir presupuesto</h2>
             <label for="name">Nombre y Appellidos</label>
             <input type="text" id="name" name="name">
@@ -89,8 +90,8 @@
            </select>
            <label for="type">Tipo</label>
            <select name="type" id="type">
-               <option value="">Exterior</option>
-               <option value="">Interior</option>
+               <option value="Exterior">Exterior</option>
+               <option value="Interior">Interior</option>
            </select>
            <input type="submit" value="Submit" id="subm">
 
@@ -155,6 +156,13 @@
     
             
         });
+
+        const form = document.querySelector("form");
+
+            form.addEventListener("submit", function(){
+                  form.reset();
+            });
+        
     }
 </script>
 
