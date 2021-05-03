@@ -160,7 +160,10 @@
         const form = document.querySelector("form");
 
             form.addEventListener("submit", function(){
-                  form.reset();
+                  setTimeout(function(){
+                    form.reset();
+                  }, 3000)
+                  
             });
         
     }
