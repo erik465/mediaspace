@@ -42,46 +42,49 @@
         <div class="product">
             <h2>Pantalla exterior</h2>
             <img src="../img/product1.jpg" alt="">
-            <button class="pres">Pedir presupuesto</button>
+            <a class="pres" href="#popup" id="popup">Pedir presupuesto</a>
         </div>
         <div class="product">
             <h2>Pantalla interior</h2>
             <img src="../img/product2.jpg" alt="">
-            <button class="pres">Pedir presupuesto</button>
+            <a class="pres" href="#popup">Pedir presupuesto</a>
         </div>
     
     </div>
 
 
-    <div class="pop-up" visibility="hidden">
+    <div class="pop-up"  visibility="hidden">
         <iframe src="" frameborder="0" id="hidden" name="hidden" class="hidden" style="display: none"></iframe>
         <form action="https://usebasin.com/f/1af9bed8fa8f" method="POST" target="hidden" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
             <h2>Pedir presupuesto</h2>
             <label for="name">Nombre y Appellidos</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="Nombre">
             <label for="mail">E-mail</label>
-            <input type="email" id="mail" name="mail">
+            <input type="email" id="mail" name="Mail">
             <label for="business">Compañía</label>
-            <input type="text" id="business" name="business">
+            <input type="text" id="business" name="Empresa">
             <label for="tel">Teléfono</label>
             <input type="tel" id="tel" name="tel">
             <label for="loc">Locación de la pantalla</label>
-            <input type="text" id="loc" name="loc">
+            <input type="text" id="loc" name="Locacion">
             <label for="he">Altura(cantidad de modulos)</label>
             <div class="aggr">
                 1
-                <input type="range" value="1" min="1" max="6" id="he" name="he">
+                <input type="range" value="1" min="1" max="6" id="he" name="Altura">
                 6
             </div>
            
             <label for="wi">Anchura(cantidad de modulos)</label>
            <div class="aggr"> 
                1
-            <input type="range"  id="wi" min="1" max="12" name="wi" value="1">
+            <input type="range"  id="wi" min="1" max="12" name="Anchura" value="1">
             12
            </div>
-           <output for="he" id="hx"></output>
-           <label for="pitch">Pitch</label>
+           <div class="o">
+            <p>Tamaño total: </p>
+            <output for="he" id="hx">0,96m x0,96m</output>
+           </div>
+           <label for="Pitch">Pitch</label>
            <select name="pitch" id="pitch">
                <option value="P4">P4</option>
                <option value="P6">P6</option>
@@ -89,11 +92,12 @@
                <option value="P10">P10</option>
            </select>
            <label for="type">Tipo</label>
-           <select name="type" id="type">
+           <select name="Tipo" id="type">
                <option value="Exterior">Exterior</option>
                <option value="Interior">Interior</option>
            </select>
-           <input type="submit" value="Submit" id="subm">
+           <input type="submit" value="Enviar" id="subm">
+           <p class="form__st">Su presupuesto está siendo enviado</p>
 
         </form>
     </div>
@@ -160,10 +164,14 @@
         const form = document.querySelector("form");
 
             form.addEventListener("submit", function(){
+                document.querySelector(".form__st").style.display = "block";  
+
                   setTimeout(function(){
                     form.reset();
-                  }, 3000)
-                  
+                    document.querySelector(".form__st").innerHTML = "Todo se ha enviado correctamente";
+                                      document.querySelector(".form__st").style.color = "rgb(28, 235, 56)";
+                  }, 3000);
+                 
             });
         
     }

@@ -5,6 +5,7 @@ html {
     overflow-x: hidden;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -122,7 +123,7 @@ header a:hover {
 
 .products {
     margin-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -238,6 +239,7 @@ footer p {
 input,select{
     width: 30%;
     outline: none;
+    margin-bottom: 10px;
 
 }
 
@@ -250,6 +252,23 @@ input,select{
     border: none;
     outline: none;
     transition: 1s;
+    margin-bottom: 0;
+}
+
+output{
+     background: rgb(43, 61, 226);
+     color: #eee;
+     height: 50%;
+}
+
+.o{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.o p{
+    font-weight: bold;
 }
 
 #subm:hover{
@@ -259,6 +278,12 @@ input,select{
 .pop-up form{
     display: flex;
     flex-direction: column;
+}
+
+.form__st{
+    display: none;
+    color: rgb(204, 235, 28);
+    margin: 0;
 }
 
 @media(max-width:950px) {
