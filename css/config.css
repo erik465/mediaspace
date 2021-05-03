@@ -257,6 +257,7 @@ input,select{
 
 output{
      background: rgb(43, 61, 226);
+     padding: 1% 0;
      color: #eee;
      height: 50%;
 }
@@ -269,6 +270,10 @@ output{
 
 .o p{
     font-weight: bold;
+    color: #eee;
+    padding: 1% 0;
+    background: rgb(43, 61, 226);
+
 }
 
 #subm:hover{
@@ -283,6 +288,11 @@ output{
 .form__st{
     display: none;
     color: rgb(204, 235, 28);
+    margin: 0;
+}
+
+.error{
+    color: rgb(236, 22, 22);
     margin: 0;
 }
 

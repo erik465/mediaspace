@@ -58,15 +58,20 @@
         <form action="https://usebasin.com/f/1af9bed8fa8f" method="POST" target="hidden" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
             <h2>Pedir presupuesto</h2>
             <label for="name">Nombre y Appellidos</label>
-            <input type="text" id="name" name="Nombre">
+            <input type="text"  class="basic_field" id="name" name="Nombre">
+            <p class="error"></p>
             <label for="mail">E-mail</label>
-            <input type="email" id="mail" name="Mail">
+            <input type="email"  class="mail_field" id="mail" name="Mail">
+            <p class="error"></p>
             <label for="business">Compañía</label>
-            <input type="text" id="business" name="Empresa">
+            <input type="text"  class="basic_field" id="business" name="Empresa">
+            <p class="error"></p>
             <label for="tel">Teléfono</label>
-            <input type="tel" id="tel" name="tel">
+            <input type="tel"  class="tel_field" id="tel" name="tel">
+            <p class="error"></p>
             <label for="loc">Locación de la pantalla</label>
-            <input type="text" id="loc" name="Locacion">
+            <input type="text" class="basic_field"  id="loc" name="Locacion">
+            <p class="error"></p>
             <label for="he">Altura(cantidad de modulos)</label>
             <div class="aggr">
                 1
@@ -176,5 +181,7 @@
         
     }
 </script>
+
+<script src="/js/validate.js"></script>
 
 </html>
