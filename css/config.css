@@ -337,18 +337,18 @@ output{
     }
 
     .pop-up h2{
-        font-size:70%;
+        font-size:2rem;
     }
 
     .pop-up form label{
-        font-size: 50%
+        font-size: 1rem
     }
     .pop-up form p{
-        font-size:70%;
+        font-size:0.7rem;
     }
 
     #subm{
-        width: 100px;
+        width: 100%;
         text-align: center;
     }
     
