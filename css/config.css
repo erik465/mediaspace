@@ -348,8 +348,12 @@ output{
     }
 
     #subm{
-        width: 100%;
+        width: 50%;
         text-align: center;
+    }
+
+    .total{
+        font-size:1rem;
     }
     
 }
