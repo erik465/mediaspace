@@ -303,6 +303,10 @@ footer {
     height: 100vh;
 }
 
+footer h1{
+    font-size:70%;
+}
+
 footer a {
     color: #eee;
     text-decoration: none;
@@ -417,7 +421,7 @@ footer h1:nth-child(2){
     color: #111;
 }
 
-.displays__cont h2, .displays__cont p{
+.displays__cont h2{
     background: rgb(48,46,46);
     color: #eee;
     border-radius: 7px;
@@ -548,7 +552,8 @@ main {
     .displays__cont{
         align-items: center;
         justify-content: space-around;
-        bottom: 20px;
+        top: 20px;
+    
     
     }
 }
