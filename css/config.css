@@ -335,5 +335,21 @@ output{
     .heading{
         margin-top: 100px;
     }
+
+    .pop-up h2{
+        font-size:70%;
+    }
+
+    .pop-up form label{
+        font-size: 50%
+    }
+    .pop-up form p{
+        font-size:70%;
+    }
+
+    #subm{
+        width: 100px;
+        text-align: center;
+    }
     
 }
