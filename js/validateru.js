@@ -12,12 +12,12 @@ form.addEventListener("submit",function(event){
         checkBasicFieldC(basicField, event);
     }
     
-    document.querySelector(".form__st").style.color = "rgb(204, 235, 28)"; 
-        document.querySelector(".form__st").innerHTML = "Su formulario se está siendo enviado"; 
-
+        document.querySelector(".form__st").style.color = "rgb(204, 235, 28)" ;
+        document.querySelector(".form__st").innerHTML = "Ваш запрос отправляеться";
+ 
           setTimeout(function(){
             form.reset();
-            document.querySelector(".form__st").innerHTML = "Todo se ha enviado correctamente";
+            document.querySelector(".form__st").innerHTML = "Все отправлено успешно";
             document.querySelector(".form__st").style.color = "rgb(28, 235, 56)" 
           }, 3000);
           
@@ -50,7 +50,7 @@ function checkBasicFieldC(element, event){
           event.preventDefault();
           document.querySelector(".form__st").style.display = 'none';
       }
-      error.innerHTML = 'Este campo es obligatorio';
+      error.innerHTML = 'Это поле обязательное';
   }
 };
 
@@ -65,7 +65,7 @@ function checkBasicField(element, event){
           event.preventDefault();
           document.querySelector(".form__st").style.display = 'none';
       }
-      error.innerHTML = 'Este campo es obligatorio';
+      error.innerHTML = 'Это поле обязательное';
   }
 };
 
@@ -81,9 +81,9 @@ function checkMailFieldC(element, event){
             document.querySelector(".form__st").style.display = 'none';
         }
         if(element.validity.valueMissing){
-            error.innerHTML = 'Este campo es obligatorio';
+            error.innerHTML = 'Это поле обязательное';
         }else{
-           error.innerHTML = 'Este formato es erróneo';
+           error.innerHTML = 'Неверный формат';
         }
         
     }
@@ -99,9 +99,9 @@ function checkMailField(element, event){
             document.querySelector(".form__st").style.display = 'none';
         }
         if(element.validity.valueMissing){
-            error.innerHTML = 'Este campo es obligatorio';
+            error.innerHTML = 'Это поле обязательное';
         }else{
-           error.innerHTML = 'Este formato es erróneo';
+           error.innerHTML = 'Неверный формат';
         }
         
     }
@@ -120,9 +120,9 @@ function checkMailField(element, event){
             document.querySelector(".form__st").style.display = 'none';
         }
         if(element.validity.valueMissing){
-            error.innerHTML = 'Este campo es obligatorio';
+            error.innerHTML = 'Это поле обязательное';
         }else{
-           error.innerHTML = 'Este formato es erróneo';
+           error.innerHTML = 'Неверный формат';
         }
         
     }
@@ -139,17 +139,10 @@ function checkMailField(element, event){
             document.querySelector(".form__st").style.display = 'none';
         }
         if(element.validity.valueMissing){
-            error.innerHTML = 'Este campo es obligatorio';
+            error.innerHTML = 'Это поле обязательное';
         }else{
-           error.innerHTML = 'Este formato es erróneo';
+           error.innerHTML = 'Неверный формат';
         }
         
     }
   };
-
-
-
-
-
-
-

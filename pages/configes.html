@@ -55,22 +55,22 @@
 
     <div class="pop-up"  visibility="hidden">
         <iframe src="" frameborder="0" id="hidden" name="hidden" class="hidden" style="display: none"></iframe>
-        <form action="https://usebasin.com/f/1af9bed8fa8f" method="POST" target="hidden" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
+        <form action="https://usebasin.com/f/1af9bed8fa8f" method="POST" novalidate target="hidden" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
             <h2>Pedir presupuesto</h2>
             <label for="name">Nombre y Appellidos</label>
-            <input type="text"  class="basic_field" id="name" name="Nombre">
+            <input type="text"  class="basic_field" id="name" name="Nombre" required>
             <p class="error"></p>
             <label for="mail">E-mail</label>
-            <input type="email"  class="mail_field" id="mail" name="Mail">
+            <input type="email"  class="mail_field" id="mail" name="Mail"required>
             <p class="error"></p>
             <label for="business">Compañía</label>
-            <input type="text"  class="basic_field" id="business" name="Empresa">
+            <input type="text"  class="basic_field" id="business" name="Empresa" required>
             <p class="error"></p>
             <label for="tel">Teléfono</label>
-            <input type="tel"  class="tel_field" id="tel" name="tel">
+            <input type="tel"  class="tel_field" id="tel" name="tel" required>
             <p class="error"></p>
             <label for="loc">Locación de la pantalla</label>
-            <input type="text" class="basic_field"  id="loc" name="Locacion">
+            <input type="text" class="basic_field"  id="loc" name="Locacion" required>
             <p class="error"></p>
             <label for="he">Altura(cantidad de modulos)</label>
             <div class="aggr">
@@ -102,7 +102,7 @@
                <option value="Interior">Interior</option>
            </select>
            <input type="submit" value="Enviar" id="subm">
-           <p class="form__st">Su presupuesto está siendo enviado</p>
+           <p class="form__st"></p>
 
         </form>
     </div>
@@ -168,18 +168,9 @@
 
         const form = document.querySelector("form");
 
-            form.addEventListener("submit", function(){
-                document.querySelector(".form__st").style.display = "block";  
-
-                  setTimeout(function(){
-                    form.reset();
-                    document.querySelector(".form__st").innerHTML = "Todo se ha enviado correctamente";
-                                      document.querySelector(".form__st").style.color = "rgb(28, 235, 56)";
-                  }, 3000);
-                 
-            });
         
     }
+
 </script>
 
 <script src="/js/validate.js"></script>

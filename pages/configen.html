@@ -40,14 +40,68 @@
         <div class="product">
             <h2>Outside display</h2>
             <img src="../img/product1.jpg" alt="">
-            <button class="pres">Order</button>
+            <a class="pres" href="#pop-up" id="pop-up">Order</a>
         </div>
         <div class="product">
             <h2>Inside display</h2>
             <img src="../img/product2.jpg" alt="">
-            <button class="pres">Order</button>
+            <a class="pres" href="#pop-up" id="pop-up">Order</a>
         </div>
     
+    </div>
+
+    <div class="pop-up"  visibility="hidden">
+        <iframe src="" frameborder="0" id="hidden" name="hidden" class="hidden" style="display: none"></iframe>
+        <form action="https://usebasin.com/f/1af9bed8fa8f" method="POST" novalidate target="hidden" oninput="hx.value = he.value * 0.96 +'m '+ 'x' + wi.value * 0.96 + 'm'">
+            <h2>Request for a budget</h2>
+            <label for="name">Name and Surname</label>
+            <input type="text"  class="basic_field" id="name" name="Nombre" required>
+            <p class="error"></p>
+            <label for="mail">E-mail</label>
+            <input type="email"  class="mail_field" id="mail" name="Mail"required>
+            <p class="error"></p>
+            <label for="business">Company</label>
+            <input type="text"  class="basic_field" id="business" name="Empresa" required>
+            <p class="error"></p>
+            <label for="tel">Telephone</label>
+            <input type="tel"  class="tel_field" id="tel" name="tel" required>
+            <p class="error"></p>
+            <label for="loc">Display location</label>
+            <input type="text" class="basic_field"  id="loc" name="Locacion" required>
+            <p class="error"></p>
+            <label for="he">Height(in modules)</label>
+            <div class="aggr">
+                1
+                <input type="range" value="1" min="1" max="6" id="he" name="Altura">
+                6
+            </div>
+           
+            <label for="wi">Width(in modules)</label>
+           <div class="aggr"> 
+               1
+            <input type="range"  id="wi" min="1" max="12" name="Anchura" value="1">
+            12
+           </div>
+           <div class="o">
+            <p>Total size: </p>
+            <output for="he" id="hx">0,96m x0,96m</output>
+           </div>
+           <label for="Pitch">Pitch</label>
+           <select name="pitch" id="pitch">
+               <option value="P4">P4</option>
+               <option value="P6">P6</option>
+               <option value="P8">P8</option>
+               <option value="P10">P10</option>
+           </select>
+           <label for="type">Type</label>
+           <select name="Tipo" id="type">
+               <option value="Exterior">Outside</option>
+               <option value="Interior">Inside</option>
+           </select>
+           <input type="submit" value="Send request" id="subm">
+           <p class="form__st"></p>
+
+        </form>
     </div>
 
     <footer id="contacts">
@@ -98,5 +152,21 @@
             select.visibility = "hidden"
         }
     });
+
+    var popUp = document.querySelector(".pop-up");
+    var buttons = document.querySelectorAll(".pres");
+
+    for(var button of buttons){
+        button.addEventListener("click", function(){
+            popUp.style.display = "block";
+    
+            
+        });
+
+        const form = document.querySelector("form");
+
+        
+    }
 </script>
+<script src="/js/validateen.js"></script>
 </html>

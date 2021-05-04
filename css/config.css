@@ -239,7 +239,7 @@ footer p {
 input,select{
     width: 30%;
     outline: none;
-    margin-bottom: 10px;
+
 
 }
 
@@ -286,7 +286,6 @@ output{
 }
 
 .form__st{
-    display: none;
     color: rgb(204, 235, 28);
     margin: 0;
 }
@@ -294,6 +293,7 @@ output{
 .error{
     color: rgb(236, 22, 22);
     margin: 0;
+    margin-bottom: 10px;
 }
 
 @media(max-width:950px) {
