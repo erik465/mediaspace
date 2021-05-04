@@ -312,7 +312,7 @@ output{
         flex-direction: column;
     }
 
-     h2, p{
+     .product_name, p{
         font-size: 50%;
     }
 
