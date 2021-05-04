@@ -353,5 +353,9 @@ output{
     .total{
         font-size:1rem;
     }
+
+    output{
+        font-size: 70%
+    }
     
 }
