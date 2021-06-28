@@ -39,7 +39,7 @@
         <a href="mpageru.html"><img src="../img/ru.svg" alt="rus"></a>
     </section>
     <main>
-        <div class="displays__main" id="displays__main">
+        <div class="displays__main" id="displays__main" style="display:none">
             <video class="displays__vid" autoplay muted loop>
                 <source src="../img/video.mp4" type="video/mp4">
              </video>
@@ -184,6 +184,10 @@
         if (select.style.visibility == "visible") {
             select.style.visibility = "hidden"
         }
+    });
+
+    document.querySelector(".dis_activate").addEventListener("click", function() {
+           document.querySelector(".displays__main").style.display = "block";
     });
 </script>
 

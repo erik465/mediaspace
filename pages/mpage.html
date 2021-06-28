@@ -15,7 +15,7 @@
         <h1>MediaSpace</h1>
         <div class="header__links">
             <a href="../index.html">Inicio</a>
-            <a href="#displays__main">Pantallas</a>
+            <a href="#displays__main" class="dis_activate">Pantallas</a>
             <a href="#we">Nosotros</a>
             <a href="#services">Servicios</a>
             <a href="#tarifes">Tarifas</a>
@@ -37,7 +37,7 @@
         <a href="mpageru.html"><img src="../img/ru.svg" alt="rus"></a>
     </section>
     <main>
-        <div class="displays__main" id="displays__main">
+        <div class="displays__main" id="displays__main" style="display:none">
             <video class="displays__vid" autoplay muted loop>
                 <source src="../img/video.mp4" type="video/mp4">
              </video>
@@ -185,6 +185,10 @@
             select.style.visibility = "hidden"
         }
     });
+
+    document.querySelector(".dis_activate").addEventListener("click", function() {
+           document.querySelector(".displays__main").style.display = "block";
+               });
 </script>
 
 
