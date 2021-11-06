@@ -497,16 +497,23 @@ main {
     }
     .services {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        flex-direction: column;
         padding-top: 10%;
+        height: 100%;
     }
     .service {
-        font-size: 50%;
+        font-size: 70%;
+        text-align: center;
     }
+
+    .service p{
+        margin: 0;
+        width: 50%;
+    }
+
     .service img {
-        width: 90px;
-        height: 100px;
+        width: 250px;
+        height: 200px;
     }
     .tar h1 {
         font-size: 150%;
