@@ -449,7 +449,7 @@ main {
         width: 120px;
     }
     .tar {
-        padding: 3% 7%;
+        padding: 3% 0 3% 0;
     }
     footer {
         padding-bottom: 10%;
@@ -457,9 +457,7 @@ main {
 }
 
 @media(max-width:950px) {
-    .tarife button {
-        width: 100px;
-    }
+   
     main {
         background: rgb(45, 3, 85);
     }
@@ -536,7 +534,7 @@ main {
         justify-content: space-around;
         align-items: baseline;
         color: #eee;
-        padding: 0 0;
+        padding:0;
     }
     .tarife {
         font-size: 50%;
