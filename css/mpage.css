@@ -477,6 +477,15 @@ main {
         text-align: center;
         margin-left: 4px;
     }
+
+    .header__links a:hover {
+        color: rgb(156, 24, 148);
+    }
+
+    .header__links a:active {
+        color: rgb(156, 24, 148);
+    }
+
     .displays__main {
         height: 200px;
         width: 100vw;
