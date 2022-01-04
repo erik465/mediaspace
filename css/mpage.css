@@ -477,11 +477,11 @@ main {
     }
 
     .header__links a:hover {
-        color: rgb(156, 24, 148);
+        color: #eee;
     }
 
     .header__links a:active {
-        color: rgb(156, 24, 148);
+        color: #eee;
     }
 
     .displays__main {
@@ -547,9 +547,7 @@ main {
         width: 120%;
         align-self: center;
     }
-    .tarife a:hover{
-      color: #eee;
-    }
+    
     
     .about-us a {
         width: 100%;
