@@ -477,6 +477,15 @@ main {
         text-align: center;
         margin-left: 4px;
     }
+
+    .header__links a:hover {
+        color: rgb(156, 24, 148);
+    }
+
+    .header__links a:active {
+        color: rgb(156, 24, 148);
+    }
+
     .displays__main {
         height: 200px;
         width: 100vw;
@@ -523,17 +532,21 @@ main {
     }
     .tarifes {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: baseline;
         color: #eee;
-        padding: 3% 10%;
+        padding: 0 0;
     }
     .tarife {
         font-size: 50%;
-        width: 150px;
+        width: relative;
+        
     }
     .tarife a {
-        font-size: 50%;
+        font-size: 0.5rem;
+        width: 120%;
+        align-self: center;
     }
     .about-us a {
         width: 100%;
