@@ -523,17 +523,19 @@ main {
     }
     .tarifes {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: baseline;
         color: #eee;
-        padding: 3% 10%;
+        padding: 0 0;
     }
     .tarife {
         font-size: 50%;
-        width: 150px;
+        width: relative;
+        
     }
     .tarife a {
-        font-size: 50%;
+        font-size: 0.5rem;
     }
     .about-us a {
         width: 100%;
