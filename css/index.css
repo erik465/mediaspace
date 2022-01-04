@@ -162,6 +162,10 @@ video {
 }
 
 @media(max-width: 850px) {
+    body{
+        background:#A19997;
+    }
+    
     header a {
         font-size: 60%;
         margin-left: 4px;
