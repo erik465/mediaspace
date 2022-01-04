@@ -181,9 +181,11 @@ video {
     video {
         position: fixed;
         right: 0;
+        background:#A19997;
         bottom: 0;
         width: 100%;
         height: 100%;
+        
     }
     .init__btn {
         text-decoration: none;
@@ -202,13 +204,14 @@ video {
         top: 0;
         left: 0;
         color: #f1f1f1;
+        background:#A19997;
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    video {
-        background: rgb(4, 7, 48);
+    .curtain{
+        background:#A19997;
     }
 }
