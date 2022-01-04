@@ -535,6 +535,7 @@ main {
         align-items: baseline;
         color: #eee;
         padding:0;
+        padding-right: 2%;
     }
     .tarife {
         font-size: 50%;
@@ -546,6 +547,10 @@ main {
         width: 120%;
         align-self: center;
     }
+    .tarife a:hover{
+      color: #eee;
+    }
+    
     .about-us a {
         width: 100%;
     }
