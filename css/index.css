@@ -161,6 +161,10 @@ video {
     width: 100%;
 }
 
+.main-img-bg{
+    display: none;
+}
+
 @media(max-width: 850px) {
     header a {
         font-size: 60%;
@@ -169,6 +173,7 @@ video {
     .header__links {
         display: flex;
         flex-wrap: wrap;
+        width: 40%;
     }
     header h1 {
         font-size: 70%;
@@ -205,6 +210,14 @@ video {
         justify-content: center;
     }
     video {
-        background: rgb(4, 7, 48);
+        display: none;
+    }
+    .main-img-bg {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 100%;
+        display: block;
     }
 }
