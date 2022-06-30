@@ -477,6 +477,11 @@ main {
     }
 
     .header__links a:hover {
+        color: rgb(156, 24, 148);
+    }
+
+    .header__links a:active {
+        color: rgb(156, 24, 148);
         color: #eee;
     }
 
@@ -534,6 +539,7 @@ main {
         justify-content: space-around;
         align-items: baseline;
         color: #eee;
+        padding: 0 0;
         padding:0;
         padding-right: 2%;
     }
