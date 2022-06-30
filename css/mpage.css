@@ -449,7 +449,7 @@ main {
         width: 120px;
     }
     .tar {
-        padding: 3% 7%;
+        padding: 3% 0 3% 0;
     }
     footer {
         padding-bottom: 10%;
@@ -457,9 +457,7 @@ main {
 }
 
 @media(max-width:950px) {
-    .tarife button {
-        width: 100px;
-    }
+   
     main {
         background: rgb(45, 3, 85);
     }
@@ -484,6 +482,11 @@ main {
 
     .header__links a:active {
         color: rgb(156, 24, 148);
+        color: #eee;
+    }
+
+    .header__links a:active {
+        color: #eee;
     }
 
     .displays__main {
@@ -537,6 +540,8 @@ main {
         align-items: baseline;
         color: #eee;
         padding: 0 0;
+        padding:0;
+        padding-right: 2%;
     }
     .tarife {
         font-size: 50%;
@@ -548,6 +553,8 @@ main {
         width: 120%;
         align-self: center;
     }
+    
+    
     .about-us a {
         width: 100%;
     }
