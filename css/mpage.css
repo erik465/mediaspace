@@ -183,7 +183,6 @@ header h1 {
 .service img {
     justify-self: center;
     align-self: center;
-    height: 170px;
     width: 250px;
     margin-bottom: 20px;
     transform: translateY(-10%);
@@ -525,7 +524,7 @@ main {
 
     .service img {
         width: 250px;
-        height: 200px;
+        height: 250px;
     }
     .tar h1 {
         font-size: 150%;
